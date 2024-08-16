@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "783459693324",
+    "project_id": "dhainventory-2337e",
+    "storage_bucket": "dhainventory-2337e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783459693324:android:1da7f5b0e2f0f1bc578f29",
+        "android_client_info": {
+          "package_name": "com.inventory.dha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEJxKjkKRd8ft5HJXDYBcrogygCcKRyt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

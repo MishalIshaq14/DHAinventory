@@ -1,22 +1,19 @@
-import 'package:dha/Activity/UnderDevCat/chooseUnderDevCat.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'DevCat/ChooseCategory2.dart';
+import 'UnderDevResedential.dart';
 
-class ChooseSectorScreen extends StatefulWidget {
-  const ChooseSectorScreen({super.key});
+class ChooseUnderDevCategory extends StatefulWidget {
+  const ChooseUnderDevCategory({super.key});
 
   @override
-  State<ChooseSectorScreen> createState() => _ChooseSectorScreenState();
+  State<ChooseUnderDevCategory> createState() => _ChooseUnderDevCategoryState();
 }
 
-class _ChooseSectorScreenState extends State<ChooseSectorScreen> {
+class _ChooseUnderDevCategoryState extends State<ChooseUnderDevCategory> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
         appBar: AppBar(
           centerTitle: true,
           backgroundColor: const Color(0xff808836),
@@ -34,31 +31,31 @@ class _ChooseSectorScreenState extends State<ChooseSectorScreen> {
               children: [
                 Center(
                   child: Text(
-                    "             SEC WISE \n TOTAL INVENTORY",
+                    " UNDER DEVELOP SECTORS",
                     style: GoogleFonts.montaguSlab(
                         textStyle: const TextStyle(
                             fontSize: 24, fontWeight: FontWeight.w700)),
                   ),
                 ),
                 const SizedBox(
-                  height: 50,
+                  height: 60,
                 ),
                 const Padding(
                   padding:  EdgeInsets.only(left: 60),
                   child:  Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                       Text("Choose Any",style: TextStyle(
-                        color: Colors.red,
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold
+                      Text("Choose Category",style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold
                       ),),
                     ],
                   ),
                 ),
-          const SizedBox(
-            height: 30,
-          ),
+                const SizedBox(
+                  height: 40,
+                ),
                 Column(
                   children: [
                     SizedBox(
@@ -70,38 +67,17 @@ class _ChooseSectorScreenState extends State<ChooseSectorScreen> {
                             backgroundColor: const Color(0xff80AF81),
                           ),
                           onPressed: () {
-                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ChooseDevelopScreen()));
+                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => UnderDevResedential()));
                           },
                           child: const Center(
                             child: Text(
-                              "Develop Sectors",
+                              "Residential Plots",
                               style: TextStyle(fontSize: 18, color: Colors.white),
                             ),
                           )),
                     ),
                     const SizedBox(
-                      height: 20,
-                    ),
-                    SizedBox(
-                      width: 300,
-                      child: TextButton(
-                          style: TextButton.styleFrom(
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 16.0, vertical: 20.0),
-                            backgroundColor: const Color(0xff80AF81),
-                          ),
-                          onPressed: () {
-                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const ChooseUnderDevCategory()));
-                          },
-                          child: const Center(
-                            child: Text(
-                              "Under Develop Sectors",
-                              style: TextStyle(fontSize: 18, color: Colors.white),
-                            ),
-                          )),
-                    ),
-                    const SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
                     SizedBox(
                       width: 300,
@@ -114,10 +90,13 @@ class _ChooseSectorScreenState extends State<ChooseSectorScreen> {
                           onPressed: () {},
                           child: const Center(
                             child: Text(
-                              "Non Develop Sectors",
+                              "Commercial Plots",
                               style: TextStyle(fontSize: 18, color: Colors.white),
                             ),
                           )),
+                    ),
+                    const SizedBox(
+                      height: 20,
                     ),
                   ],
                 )
